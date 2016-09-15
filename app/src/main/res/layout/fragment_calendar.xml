@@ -1,0 +1,36 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:id="@+id/calendar_layout"
+    tools:context="com.dkondratov.opengame.fragments.CalendarFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/balls"
+        android:scaleType="fitEnd"
+        android:layout_alignParentBottom="true"
+        android:baselineAlignBottom="false" />
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendar"
+        app:mcv_selectionColor="@color/dark_gray"
+        app:mcv_arrowColor="@color/gold_color"
+        app:mcv_dateTextAppearance="?android:attr/textAppearanceMedium"
+        app:mcv_weekDayTextAppearance="?android:attr/textAppearanceSmall"
+        app:mcv_firstDayOfWeek="monday"
+        app:mcv_showOtherDates="true"
+        app:mcv_monthLabels="@array/month_array"
+        app:mcv_headerTextAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_menu"
+        android:id="@+id/include" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/no_events_field"
+        android:textColor="@color/white"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:id="@+id/no_events" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/events_listivew"
+        android:layout_below="@+id/no_events"
+        android:divider="@color/grey"
+        android:dividerHeight="3dp"
+        android:drawSelectorOnTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

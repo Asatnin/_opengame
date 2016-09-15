@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/balls"
+        android:scaleType="fitEnd"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Switch
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/place_notifications"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:text="Уведомления на площадках"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/black_transparent"/>
+
+        <Switch
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/friends_notification"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:text="Уведомления от друзей"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/black_transparent"/>
+    </LinearLayout>
+
+</RelativeLayout>

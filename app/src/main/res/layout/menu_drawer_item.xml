@@ -1,0 +1,34 @@
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textViewDrawer"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif-light"
+        android:textSize="12sp"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:id="@+id/count"
+        android:layout_marginLeft="16dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/circle"
+        android:layout_toRightOf="@id/textViewDrawer"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:text="1"/>
+
+</RelativeLayout>

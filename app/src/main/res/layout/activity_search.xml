@@ -1,0 +1,91 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="horizontal"
+    tools:context="com.dkondratov.opengame.fragments.NavigationDrawerFragment" >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/balls"
+        android:scaleType="fitEnd"
+        android:layout_alignParentBottom="true"
+        android:baselineAlignBottom="false" />
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar_menu"/>
+        <AutoCompleteTextView
+            android:id="@+id/city"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/white"
+            android:hint="Город"/>
+        <AutoCompleteTextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/white"
+            android:hint="Адрес"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke_b"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sport_type"
+                android:minHeight="48dp"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke_b"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <Spinner
+            android:id="@+id/pokrytie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:minWidth="170dp"
+        android:padding="8dp"
+        android:layout_gravity="right"
+        android:layout_below="@id/search_layout"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/request_button"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"/>
+
+
+</RelativeLayout>

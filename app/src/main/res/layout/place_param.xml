@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/place_param"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:background="@color/black_transparent">
+    <ImageView
+        android:id="@+id/place_param_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/lightning"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"/>
+    <TextView
+        android:id="@+id/place_param_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/place_param_color"
+        android:text="@string/lightning"/>
+    <TextView
+        android:id="@+id/place_param_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:minHeight="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/place_param_color"
+        android:layout_toRightOf="@+id/place_param_name"
+        android:layout_marginLeft="16dp" />
+</RelativeLayout>

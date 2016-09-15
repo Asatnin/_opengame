@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:minHeight="50dp">
+
+        <!-- Название -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@color/black_transparent">
+
+            <EditText
+                android:id="@+id/event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="50dp"
+                android:hint="@string/title_event"
+                android:background="#00000000"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/place_param_color"
+                android:layout_marginRight="16dp" />
+
+        </RelativeLayout>
+
+        <!-- Начало -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:minHeight="50dp"
+            android:id="@+id/start_layout"
+            android:background="@color/black_transparent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/event_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="38dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/place_param_color"
+                android:text="@string/event_start"/>
+
+            <TextView
+                android:id="@+id/date_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="38dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/place_param_color"
+                android:hint="@string/date"
+                android:layout_toLeftOf="@+id/time_start" />
+
+            <TextView
+                android:id="@+id/time_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="38dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/place_param_color"
+                android:hint="@string/time"
+                />
+
+        </RelativeLayout>
+
+        <!-- Конец -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:minHeight="50dp"
+            android:id="@+id/end_layout"
+            android:background="@color/black_transparent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/event_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="38dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/place_param_color"
+                android:text="@string/event_end"/>
+
+            <TextView
+                android:id="@+id/date_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="38dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/place_param_color"
+                android:hint="@string/date"
+                android:layout_toLeftOf="@+id/time_end" />
+
+            <TextView
+                android:id="@+id/time_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="38dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/place_param_color"
+                android:hint="@string/time"
+                />
+
+        </RelativeLayout>
+
+        <!-- Напоминание -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:minHeight="50dp"
+            android:id="@+id/notification_layout"
+            android:background="@color/black_transparent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/event_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="38dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/place_param_color"
+                android:text="@string/event_notification"/>
+
+            <TextView
+                android:id="@+id/date_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="38dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="@string/date"
+                android:textColor="@color/place_param_color"
+                android:layout_toLeftOf="@+id/time_notification" />
+
+            <TextView
+                android:id="@+id/time_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="38dp"
+                android:hint="@string/time"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/place_param_color"
+                />
+
+        </RelativeLayout>
+
+        <!-- Заметки -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@color/black_transparent">
+
+            <EditText
+                android:id="@+id/event_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/place_param_color"
+                android:background="#00000000"
+                android:hint="@string/event_notes"/>
+
+        </RelativeLayout>
+
+        <!-- Оповестить друзей -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/friends_layout"
+            android:background="@color/black_transparent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:minHeight="38dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/place_param_color"
+                android:text="@string/alert_friends"/>
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/friends_switch"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"/>
+        </RelativeLayout>
+
+        <!-- Оповестить команду -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/team_layout"
+
+            android:background="@color/black_transparent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="38dp"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/place_param_color"
+                android:text="@string/alert_team"
+                android:id="@+id/textView" />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/team_switch"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <!-- Оповестить у кого избранное -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/favo_layout"
+
+            android:background="@color/black_transparent">
+            <TextView
+                android:id="@+id/favorites_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="38dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/place_param_color"
+                android:text="@string/alert_favorites"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/favorites"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/favorites_field"
+                android:layout_centerVertical="true" />
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/favo_switch"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp">
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:id="@+id/add_button"
+                android:background="@drawable/add_event_button"
+                android:text="@string/add"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

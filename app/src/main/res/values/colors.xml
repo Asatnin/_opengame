@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="place_param_color">#FFFFFF</color>
+    <color name="gold_color">#c49800</color>
+    <color name="gold_color_pressed">#a49800</color>
+    <color name="black_transparent">#4D000000</color>
+    <color name="grey">#787878</color>
+    <color name="dark_gray">#606060</color>
+    <color name="white">#FFFFFF</color>
+    <color name="marker">#4D000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="main">#0a636b</color>
+    <color name="dark_main">#2a636b</color>
+</resources>

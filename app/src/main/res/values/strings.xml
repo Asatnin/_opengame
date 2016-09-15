@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">OpenGame</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string-array name="drawer_menu_array">
+        <item>Поиск площадки</item>
+        <item>Приглашения</item>
+        <item>Избранное</item>
+        <item>Мои друзья</item>
+        <item>Календарь</item>
+        <item>Настройки</item>
+        <item>Написать нам</item>
+    </string-array>
+
+    <string-array name="days_array">
+        <item>П</item>
+        <item>В</item>
+        <item>С</item>
+        <item>Ч</item>
+        <item>П</item>
+        <item>С</item>
+        <item>В</item>
+    </string-array>
+
+    <string-array name="month_array">
+        <item>ЯНВ</item>
+        <item>ФЕВ</item>
+        <item>МАР</item>
+        <item>АПР</item>
+        <item>МАЙ</item>
+        <item>ИЮН</item>
+        <item>ИЮЛ</item>
+        <item>АВГ</item>
+        <item>СЕН</item>
+        <item>ОКТ</item>
+        <item>НОЯ</item>
+        <item>ДЕК</item>
+    </string-array>
+
+    <string name="title_activity_places_map">Map</string>
+
+    <!-- Информация о спортивной площадке -->
+    <string-array name="place_param_array">
+        <item>Освещение</item>
+        <item>Покрытие</item>
+        <item>Кол-во игроков/сейчас</item>
+        <item>Оплата</item>
+        <item>Очистка зимой</item>
+        <item>Время работы</item>
+        <item>Телефон</item>
+        <item>Адрес</item>
+    </string-array>
+
+    <string name="add_to_favorites">Добавить в избранное</string>
+    <string name="i_am_here">Я здесь</string>
+    <string name="lightning">Освещение</string>
+    <string name="cover">Покрытие</string>
+    <string name="players_now">Кол-во игроков/сейчас</string>
+    <string name="players_in_queue">Кол-во игроков в очереди</string>
+    <string name="charge">Оплата</string>
+    <string name="winter">Очистка зимой</string>
+    <string name="timetable">Время работы</string>
+    <string name="phone">Телефон</string>
+    <string name="address">Адрес</string>
+    <string name="title_activity_splash_screen_activivty">SplashScreenActivivty</string>
+
+    <string-array name="friends_pages">
+        <item>Новые</item>
+        <item>Друзья</item>
+        <item>Команда</item>
+    </string-array>
+
+    <string-array name="invites_pages">
+        <item>Новые</item>
+        <item>История</item>
+    </string-array>
+    
+    
+    <string name="about_me">О себе:</string>
+    <string name="birthday">Дата рождения:</string>
+    <string name="city">Город: </string>
+    <string name="sports">Вид спорта:</string>
+
+    <string name="google_maps_key">
+        AIzaSyCAPRyZYkmFPH4GnV8JpASeXbpXRRDHKfY
+    </string>
+    <string name="add_event">Добавить событие</string>
+    <string name="title_event">Название</string>
+    <string name="event_start">Начало</string>
+    <string name="event_end">Конец</string>
+    <string name="event_notification">Напоминание</string>
+    <string name="event_notes">Заметки</string>
+    <string name="alert_friends">Оповестить друзей</string>
+    <string name="alert_team">Оповестить команду</string>
+    <string name="alert_favorites">Оповестить всех, у кого в</string>
+
+    <string name="add">Добавить</string>
+
+
+    <string name="reg_name">Имя</string>
+    <string name="reg_surname">Фамилия</string>
+    <string name="reg_info">Для использования приложения\nВам необходимо зарегистрироваться</string>
+    <string name="fio">ФИО*</string>
+    <string name="reg_phone">Телефон*</string>
+    <string name="reg_birthday">Дата рождения*</string>
+    <string name="reg_city">Город*</string>
+    <string name="reg_sports">Предпочитаемые виды спорта*</string>
+    <string name="reg_save">Сохранить</string>
+    <string name="reg_social">Или зарегистрироваться с помощью</string>
+    <string name="reg_ip">Регистрация для юридических лиц</string>
+    <string name="register">Регистрация</string>
+
+    <string name="yes_rus">да</string>
+    <string name="no_rus">нет</string>
+
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+
+    <string name="who">Кто:</string>
+    <string name="when">Когда:</string>
+    <string name="where">Где:</string>
+    <string name="view_place">Посмотреть площадку на карте</string>
+    <string name="in_game">Я в игре</string>
+    <string name="decline_invite">Отклонить</string>
+
+    <string name="reg_error">"Заполните поля для регистрации"</string>
+
+    <string name="check_network">Проверьте соединение с интернетом и попробуйте еще раз</string>
+
+    <string name="choose_city">Введите название города</string>
+    <string name="choose_sport">Выберите предпочитаемый вид спорта</string>
+    <string name="input_about_me">Введите информацию о себе</string>
+    <string name="ok_word">OK</string>
+    <string name="cancel_word">Отмена</string>
+    <string name="for_registered_user">Функция доступна только для зарегистрированных пользователей.</string>
+    <string name="register_me">Зарегистрироваться</string>
+
+    <string name="no_events_field">Нет событий на выбранную дату</string>
+    <string name="my_events">Мои события</string>
+    <string name="events">События</string>
+    <string name="add_field">Добавить площадку</string>
+    <string name="no_invitations">В данный момент у вас нет приглашений</string>
+    <string name="new_event">Новое событие</string>
+    <string name="all_events">Все события</string>
+    <string name="no_events_calendar">У Вас нет событий на выбранную дату.\nСобытие можно добавить на экране площадки</string>
+
+    <string name="max_players">Максимальное число игроков</string>
+
+    <string name="check_internet">Проверьте соединение с интернетом и попробуйте позже</string>
+    <string name="field_not_found">Площадка не найдена</string>
+
+    <string name="facebook_app_id">1405759653067353</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="add_to_friends">Добавить в друзья</string>
+
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="search">Искать</string>
+    <string name="title_activity_add_field">AddFieldActivity</string>
+
+</resources>

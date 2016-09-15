@@ -1,0 +1,131 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/who"
+        android:textColor="@color/white"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/when"
+        android:textColor="@color/white"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/user_name"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/where"
+        android:textColor="@color/white"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/date"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Название "
+        android:id="@+id/user_name"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="31.06.2015"
+        android:id="@+id/date"
+        android:textColor="@color/white"
+        android:gravity="bottom"
+        android:layout_alignStart="@+id/look_at_field"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="12-00"
+        android:id="@+id/time"
+        android:textColor="@color/white"
+        android:gravity="bottom"
+        android:layout_alignTop="@+id/date"
+        android:layout_marginLeft="160dp"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/view_place"
+        android:textColor="@color/gold_color"
+        android:id="@+id/look_at_field"
+        android:layout_marginLeft="72dp"
+        android:gravity="bottom"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:id="@+id/imageView"
+        android:src="@drawable/address"
+        android:layout_alignBottom="@+id/look_at_field"
+        android:layout_toRightOf="@+id/look_at_field"
+        android:layout_toEndOf="@+id/look_at_field"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="16dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/accept_button"
+        android:background="@drawable/add_event_button"
+        android:text="@string/in_game"
+        android:textColor="@color/white"
+        android:layout_alignTop="@+id/decline_button"
+        android:layout_toLeftOf="@+id/decline_button"
+        android:layout_toStartOf="@+id/decline_button"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/decline_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/save_user_button"
+        android:text="@string/decline_invite"
+        android:textColor="@color/white"
+        android:layout_below="@+id/look_at_field"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>

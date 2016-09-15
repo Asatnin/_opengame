@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@color/black_transparent">
+    
+    <ImageView
+        android:id="@+id/friend_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/default_profile"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp" />
+
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_check"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/team"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_team"
+        android:layout_marginRight="8dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/check"
+        android:visibility="invisible"/>
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:minHeight="48dp"
+        android:layout_toRightOf="@id/friend_image"
+        android:layout_marginLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/white"
+        android:layout_toLeftOf="@id/team"
+        android:text="Иван Иванов"/>
+</RelativeLayout>

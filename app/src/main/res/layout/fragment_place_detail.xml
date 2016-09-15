@@ -1,0 +1,146 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dkondratov.opengame.fragments.PlaceDetailFragment"
+    android:fillViewport="true"
+    android:id="@+id/background_scroll_view"
+    android:background="@drawable/football_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Избранное -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/black_transparent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/favorites"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:layout_marginLeft="70dp"
+                android:textColor="@color/place_param_color"
+                android:text="@string/add_to_favorites"/>
+            <Switch
+                android:id="@+id/favorites_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp" />
+        </RelativeLayout>
+
+        <!-- Я здесь -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/black_transparent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="48dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/place_param_color"
+                android:text="@string/i_am_here"/>
+            <Switch
+                android:id="@+id/checkin_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/place_description_layout"
+            android:background="@color/black_transparent">
+            <TextView
+                android:id="@+id/place_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/place_param_color"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/place_params_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="7dp"
+            android:background="@color/black_transparent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="48dp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/place_param_color"
+                    android:text="@string/add_event"/>
+
+                <ImageButton
+                    android:id="@+id/new_event_button"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:color="@color/gold_color"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add_event"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calendar"
+                app:mcv_selectionColor="@color/dark_gray"
+                app:mcv_arrowColor="@color/gold_color"
+                app:mcv_firstDayOfWeek="monday"/>
+
+        </LinearLayout>
+
+     </LinearLayout>
+
+</ScrollView>
